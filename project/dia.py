@@ -13,7 +13,7 @@ st.set_page_config(page_title="Diabetes Data Dashboard", page_icon=":bar_chart:"
 st.title(":bar_chart: Diabetes Data Dashboard")
 
 
-df = pd.read_csv('diabetes.csv')
+df = pd.read_csv('project/diabetes.csv')
 
 
 st.subheader("First 5 Rows of Diabetes Data")
