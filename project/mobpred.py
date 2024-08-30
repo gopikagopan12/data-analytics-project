@@ -5,7 +5,7 @@ st.set_page_config(page_title="Mobile Price Prediction", page_icon="📱", layou
 st.title("📱 Mobile Price Prediction")
 
 
-model_ridge = joblib.load('rid11.pkl')
+model_ridge = joblib.load('project/rid11.pkl')
 
 st.header("Prediction")
 
