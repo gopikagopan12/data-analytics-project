@@ -9,7 +9,7 @@ st.set_page_config(page_title="Almond Dataset Analysis", page_icon="🌰", layou
 st.title("🌰 Almond Data Analysis")
 
 # Loading the almond dataset
-adf = pd.read_csv('Almond.csv')
+adf = pd.read_csv('project/Almond.csv')
 st.header("Almond Dataset")
 st.dataframe(adf.head())
 
