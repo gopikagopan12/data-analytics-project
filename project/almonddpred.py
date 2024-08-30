@@ -11,7 +11,7 @@ st.set_page_config(page_title="Almond Classification", page_icon="🌰", layout=
 st.title("🌰 Almond Data Analysis and Classification")
 
 
-almond_df = pd.read_csv('Almond.csv')
+almond_df = pd.read_csv('project/Almond.csv')
 st.header("Almond Dataset")
 st.dataframe(almond_df.head())
 
