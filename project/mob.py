@@ -9,7 +9,7 @@ st.set_page_config(page_title="Mobile Price Analysis", page_icon="📱", layout=
 st.title("📱 Mobile Price Data Analysis 📊")
 
 
-sdf = pd.read_csv("Mobile-Price-Prediction-cleaned_data.csv")
+sdf = pd.read_csv("project/Mobile-Price-Prediction-cleaned_data.csv")
 st.subheader("Mobile Dataset")
 st.dataframe(sdf.head())
 
