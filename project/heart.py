@@ -12,7 +12,7 @@ st.set_page_config(page_title="Heart Disease Data Analysis", page_icon="❤️",
 st.title("❤️ Heart Disease Data Analysis ❤️")
 
 
-df = pd.read_csv('heart.csv')
+df = pd.read_csv('project/heart.csv')
 
 
 st.header('❤️ Heart Disease Data Set ❤️')
