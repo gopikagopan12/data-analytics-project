@@ -6,8 +6,6 @@ st.title("📱 Mobile Price Prediction")
 
 
 model_ridge = joblib.load('rid11.pkl')
-model_lasso = joblib.load('lass11.pkl')
-model_elasticnet = joblib.load('enet11.pkl')
 
 st.header("Prediction")
 
@@ -26,8 +24,6 @@ sample1 = [[n1, n2, n3, n4, n5, n6, n7]]
 if st.button("Predict the price"):
     
     t1 = model_ridge.predict(sample1)
-    t2 = model_lasso.predict(sample1)
-    t3 = model_elasticnet.predict(sample1)
     
     
     if t1 is not None:
