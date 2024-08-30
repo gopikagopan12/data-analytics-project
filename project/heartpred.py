@@ -1,8 +1,8 @@
 import streamlit as st
-import pickle
+import joblib
 
 
-model = pickle.load(open('kmeans_heart.pkl', 'rb'))
+model = joblib.load('kmeans_heart.pkl')
 
 st.header("Heart Disease Prediction")
 
