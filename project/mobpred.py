@@ -1,13 +1,13 @@
 import streamlit as st
-import pickle
+import joblib
 
 st.set_page_config(page_title="Mobile Price Prediction", page_icon="📱", layout="wide")
 st.title("📱 Mobile Price Prediction")
 
 
-model_ridge = pickle.load(open('rid11.pkl', 'rb'))
-model_lasso = pickle.load(open('lass11.pkl', 'rb'))
-model_elasticnet = pickle.load(open('enet11.pkl', 'rb'))
+model_ridge = joblib.load('rid11.pkl')
+model_lasso = joblib.load('lass11.pkl')
+model_elasticnet = joblib.load('enet11.pkl')
 
 st.header("Prediction")
 
